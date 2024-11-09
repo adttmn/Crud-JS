@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import UserList from './components/userList';
-import AddUser from './components/AddUser';
-import EditUser from './components/EditUser';
+import UserList from './components/UserList.jsx';
+import AddUser from './components/AddUser.jsx';
+import EditUser from './components/EditUser.jsx';
 
 function App() {
   return (

@@ -16,7 +16,7 @@ const EditUser = () => {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:3000/users/${id}`, {
+      await axios.patch(`http://localhost:8000/users/${id}`, {
         nama,
         email,
         jenis_kelamin,
@@ -28,7 +28,7 @@ const EditUser = () => {
   };
 
   const getUserById = async () => {
-    const response = await axios.get(`http://localhost:3000/users/${id}`);
+    const response = await axios.get(`http://localhost:8000/users/${id}`);
     setNama(response.data.nama);
     setEmail(response.data.email);
     setjenis_kelamin(response.data.jenis_kelamin);

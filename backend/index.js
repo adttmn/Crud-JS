@@ -8,4 +8,4 @@ app.use(cors());
 app.use(express.json()); 
 app.use(userRoute);
 
-app.listen(3000,()=> console.log('Server Berhasil Dibuat...'));
+app.listen(8000,()=> console.log('Server Berhasil Dibuat...'));
